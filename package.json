@@ -17,7 +17,7 @@
     "format": "prettier src/**/*.{ts,tsx,json,md} --write",
     "verify": "npm run  format -l && npm run  lint",
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "precommit": "if  git-branch-is -q master; then  npm run  format && npm run lint ; else echo \"no scripts for this branch\"; fi",
+    "precommit": "if  git-branch-is -q master2; then  npm run  format && npm run lint ; else echo \"no scripts for this branch\"; fi",
     "prepush": "if git-branch-is -q noset; then  echo \"no set yet\"; else echo \"no scripts for this branch\"; fi",
     "stub:service-one": "SERVICE_PORT=5000 node stubs/service-one/server.js",
     "stub:service-two": "SERVICE_PORT=5001 node stubs/service-two/server.js",
@@ -39,7 +39,7 @@
       "header-min-length": [
         2,
         "always",
-        50
+        10
       ],
       "scope-empty": [
         2,
