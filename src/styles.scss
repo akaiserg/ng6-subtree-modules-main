@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: pfbeausans_bold;
+  src: url(./assets/fonts/pfbeausanspro-bold.eot);
+  src: url(./assets/fonts/pfbeausanspro-bold.eot?#iefix) format("embedded-opentype"),
+       url(./assets/fonts/pfbeausanspro-bold.woff) format("woff"),
+       url(./assets/fonts/pfbeausanspro-bold.ttf) format("truetype"),
+       url(./assets/fonts/pfbeausanspro-bold.svg#pfbeusanspro_bold) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: block;
+}
+
+
+
+@font-face {
+  font-family: pfbeausans_light;
+  src: url(./assets/fonts/pfbeausanspro-light.eot);
+  src: url(./assets/fonts/pfbeausanspro-light.eot?#iefix) format("embedded-opentype"),
+       url(./assets/fonts/pfbeausanspro-light.woff) format("woff"),
+       url(./assets/fonts/pfbeausanspro-light.ttf) format("truetype"),
+       url(./assets/fonts/pfbeausanspro-light.svg#pfbeusans_light) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: block;
+}
+
+
+@font-face {
+  font-family: pfbeausans;
+  src: url(./assets/fonts/pfbeausanspro-regular.eot);
+  src: url(./assets/fonts/pfbeausanspro-regular.eot?#iefix) format("embedded-opentype"),
+       url(./assets/fonts/pfbeausanspro-regular.woff) format("woff"),
+       url(./assets/fonts/pfbeausanspro-regular.ttf) format("truetype"),
+       url(./assets/fonts/pfbeausanspro-regular.svg#pfbeusans) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: block;
+}
+
+
+@import "./assets/scss/main.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+

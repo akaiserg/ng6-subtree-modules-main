@@ -1,0 +1,71 @@
+{
+  "rulesDirectory": [
+    "node_modules/codelyzer",
+    "tslint-config-standard",
+    "tslint-config-prettier"
+  ],
+  "extends": ["tslint:recommended", "tslint-sonarts"],
+  "rules": {
+     // @override: tslint:recommended / tslint-config-standard
+     "object-literal-sort-keys": false,
+     "no-floating-promises": false,
+     "no-empty": false,
+     "trailing-comma":false,
+     // @core: code rules
+     "deprecation": {
+       "severity": "warn"
+     },
+     "import-blacklist": [
+       true,
+       "rxjs",
+       "rxjs/Rx"
+     ],
+
+     // @core: type rules
+     "interface-over-type-literal": false,
+     "member-access": false,
+     "no-inferrable-types": [
+       true,
+       "ignore-params"
+     ],
+     "interface-name": [true, "never-prefix"],
+     "no-non-null-assertion": true,
+
+     // @ codelyzer rules
+     "directive-selector": [
+       true,
+       "attribute",
+       "app",
+       "camelCase"
+     ],
+     "component-selector": [
+       true,
+       "element",
+       "app",
+       "kebab-case"
+     ],
+     "no-output-on-prefix": true,
+     "use-input-property-decorator": true,
+     "use-output-property-decorator": true,
+     "use-host-property-decorator": true,
+     "no-input-rename": true,
+     "no-output-rename": true,
+     "use-life-cycle-interface": true,
+     "use-pipe-transform-interface": true,
+     "component-class-suffix": true,
+     "directive-class-suffix": true,
+     "angular-whitespace": [true, "check-interpolation", "check-semicolon"]
+  },
+  "linterOptions": {
+    "exclude": [
+      "**/*.spec.ts",
+      "src/*.js",
+      "src/*.ts"
+    ]
+  },
+  "exclude": [
+    "**/*.spec.ts",
+    "src/*.js",
+    "src/*.ts"
+  ]
+}

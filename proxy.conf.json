@@ -1,0 +1,18 @@
+{
+  "/api/resource/one/service/*": {
+    "target": "http://localhost:5000",
+    "secure": false,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/api/resource/one/service": "/resource/one/service"
+    }
+  },
+  "/api/resource/two/service/*": {
+    "target": "http://localhost:5001",
+    "secure": false,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/api/resource/two/service": "/resource/two/service"
+    }
+  }
+}

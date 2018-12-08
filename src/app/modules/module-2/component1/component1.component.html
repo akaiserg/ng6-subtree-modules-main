@@ -1,0 +1,30 @@
+<div class="jumbotron">
+  <h1>Module-1/component1</h1>
+  <p class="lead"> component injected from shared/components/component-help</p>
+  <div class="card-deck">
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <p class="card-text my-div">Call Api with promise(async/await)</p>
+        <button type="button" class="btn btn-outline-success" (click)="callHandlerExample1()">Call api</button>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <p class="card-text my-div">Call api with rxjs (observable)</p>
+        <button type="button" class="btn btn-outline-success" (click)="callHandlerExample2()">Call api</button>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <p class="card-text my-div">Call api with timeout error</p>
+        <button type="button" class="btn btn-outline-danger" (click)="callHandlerExample3()">Call api</button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="text-center">
+      <span class="badge badge-pill badge-light"><h5>{{ response }}</h5></span>
+  </div>
+  <br>
+  <button type="button" class="btn btn-secondary btn-lg btn-block" routerLink="/">Home</button>
+</div>
