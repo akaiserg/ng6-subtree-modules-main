@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "git:push:m1":"git subtree push --prefix src/app/modules/module-1 https://github.com/akaiserg/ng6-subtree-modules-feature1.git  master",
+    "serve:team-1":"ng serve --project=team1",
     "serve": "ng serve",
     "serve:aot": "ng serve --aot",
     "ng:build": "ng build --prod",
